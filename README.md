@@ -2,7 +2,7 @@
 
 ANCORsyn is a coreference corpus enriched with (morpho-)syntactic and semantic annotations. ANCORsyn builds on data from the ANCOR_Centre corpus (Muzerelle et al. 2013, 2014), to which manual annotations were added for linguistic analyses of reference-tracking in the context of my thesis project at the University of Cologne.
 
-Note that the name was chosen to reflect that this work would not have been possible without the original corpus being made available freely for research purposes (see <a href="license">license requirements</a>). The authors of ANCOR_Centre are not responsible in any way for the result of the <a href="modifications">adaptations</a>.
+Note that the name was chosen to reflect that this work would not have been possible without the original corpus being made available freely for research purposes (see <a href="#license">license requirements</a>). The authors of ANCOR_Centre are not responsible in any way for the result of the <a href="#modifications">adaptations</a>.
 
 
 ## Original resource and adapted annotations <a name="modifications"/>
