@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Mark-Christoph Mueller, European Media Lab, Heidelberg, Germany (mueller@eml.org) -->
+<annotationscheme>
+        
+        <attribute id="section_n" name="n" type="freetext" text="Sequence number within the file">
+                <value id="section_n_1" name="section_n_1"/>
+        </attribute>
+        <attribute id="section_id_topic" name="id_topic" type="freetext" text="Topic ID of this section">
+                <value id="section_id_topic_1" name="section_id_topic_1"/>
+        </attribute>
+        
+</annotationscheme>

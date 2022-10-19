@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<annotationscheme>
+ 
+ 
+<!-- Agreement features -->
+ 
+  <attribute id="morphosyntax_person" name="person" type="nominal_button">
+  <value id="morphosyntax_person_na" name="na"/>
+  <value id="morphosyntax_person_1" name="1"/>
+  <value id="morphosyntax_person_2" name="2"/>
+  <value id="morphosyntax_person_3" name="3"/>
+ </attribute>
+ 
+   <attribute id="morphosyntax_number" name="number" type="nominal_button">
+  <value id="morphosyntax_number_na" name="na"/>
+  <value id="morphosyntax_number_sing" name="sing"/>
+  <value id="morphosyntax_number_plur" name="plur"/>
+  <value id="morphosyntax_number_undef" name="undef"/>
+ </attribute>
+ 
+   <attribute id="morphosyntax_gender" name="gender" type="nominal_button">
+  <value id="morphosyntax_gender_na" name="na"/>
+  <value id="morphosyntax_gender_masc" name="masc"/>
+  <value id="morphosyntax_gender_fem" name="fem"/>
+  <value id="morphosyntax_gender_undef" name="undef"/>
+ </attribute> 
+ 
+ 
+ <!-- Form -->
+ 
+   <attribute id="morphosyntax_category" name="category" type="nominal_button">
+  <value id="morphosyntax_category_na" name="na"/>
+  <value id="morphosyntax_category_pron" name="pron" next="morphosyntax_prontype"/>
+  <value id="morphosyntax_category_np" name="np"  next="morphosyntax_nptype"/>
+ </attribute>
+ 
+   <attribute id="morphosyntax_prontype" name="prontype" type="nominal_button">
+  <value id="morphosyntax_prontype_na" name="na"/>
+  <value id="morphosyntax_prontype_pers" name="pers"/>
+  <value id="morphosyntax_prontype_poss" name="poss"/>
+  <value id="morphosyntax_prontype_rel" name="rel"/>
+  <value id="morphosyntax_prontype_refl" name="refl"/>
+  <value id="morphosyntax_prontype_int" name="int"/>
+  <value id="morphosyntax_prontype_indef" name="indef"/>
+  <value id="morphosyntax_prontype_dem" name="dem"/>
+  <value id="morphosyntax_prontype_null" name="null"/>
+  <value id="morphosyntax_prontype_null-nonfin" name="null-nonfin"/>
+ </attribute>
+
+ 
+  <attribute id="morphosyntax_nptype" name="nptype" type="nominal_button">
+  <value id="morphosyntax_nptype_na" name="na"/>
+  <value id="morphosyntax_nptype_indef" name="indef"/>
+  <value id="morphosyntax_nptype_def" name="def"/>
+  <value id="morphosyntax_nptype_dem" name="dem"/>
+  <value id="morphosyntax_nptype_poss" name="poss"/>
+  <value id="morphosyntax_nptype_name" name="name"/>
+  <value id="morphosyntax_nptype_rel" name="rel"/>
+  <value id="morphosyntax_nptype_int" name="int"/>
+ </attribute>
+ 
+ 
+ <attribute id="syntax_synrole" name="synrole" type="nominal_list">
+  <value id="syntax_synrole_na" name="na" />
+   <value id="syntax_synrole_subj" name="subj"/> 
+  <value id="syntax_synrole_obj" name="obj"/>  
+  <value id="syntax_synrole_obl" name="obl"/>  
+  <value id="syntax_synrole_mod" name="mod"/>  
+  <value id="syntax_synrole_nmod" name="nmod"/>  
+  <value id="syntax_synrole_det" name="det"/>   
+  <value id="syntax_synrole_conj" name="conj" next="synrole_inherit_from"/> 
+  <value id="syntax_synrole_disloc" name="disloc"/>  
+  <value id="syntax_synrole_cleft" name="cleft"/> 
+  <value id="syntax_synrole_vocative" name="vocative"/> 
+  <value id="syntax_synrole_other" name="other"/> 
+ </attribute>
+ 
+ <attribute id="synrole_inherit_from" name="inherit_from" type="markable_pointer" color="cyan" width="1" style="rcurve" max_size="1" point_to_markable_text="Mark as first conjunct to inherit role from" remove_pointer_to_markable_text="Unmark as first conjunct to inherit role from">
+  <value id="synrole_inherit_from_none" name="not_set" />
+  <value id="synrole_inherit_from_set" name="set" />
+ </attribute> 
+ 
+  <attribute id="syntax_subj_position" name="subj_position" type="nominal_button">
+  <value id="syntax_subj_position_na" name="na" />
+   <value id="syntax_subj_position_preverbal" name="preverbal"/> 
+  <value id="syntax_subj_position_postverbal" name="postverbal"/> 
+ </attribute>
+ 
+   <attribute id="syntax_cx_type" name="cx_type" type="nominal_button">
+  <value id="syntax_cx_type_na" name="na" />
+   <value id="syntax_cx_type_presentational" name="presentational"/> 
+   <value id="syntax_cx_type_cleft_etre" name="cleft_etre"/> 
+   <value id="syntax_cx_type_cleft_other" name="cleft_other"/> 
+ </attribute>
+ 
+ <attribute id="syntax_disloc_type" name="disloc_type" type="nominal_button">
+  <value id="syntax_disloc_type_na" name="na" />
+   <value id="syntax_disloc_type_left" name="left"/> 
+  <value id="syntax_disloc_type_right" name="right"/>
+  <value id="syntax_disloc_type_in_situ" name="in-situ"/> 
+ </attribute>
+ 
+ 
+<!-- Referentiality -->
+  
+ <attribute id="reference_referential" name="referential" type="nominal_button">
+  <value id="reference_referentiality_na" name="na" />
+  <value id="reference_referentiality_referential" name="ref" next="reference_intro"/>
+  <value id="reference_referentiality_predicative" name="pred"/>
+  <value id="reference_referentiality_interrogative" name="int"/>
+  <value id="reference_referentiality_expl" name="expl"/>
+  <value id="reference_referentiality_idiom" name="idiom"/>
+  <value id="reference_referentiality_neg" name="neg"/>
+  <value id="reference_referentiality_prop" name="prop"/>
+  <value id="reference_referentiality_unclear" name="unclear"/>
+ </attribute>
+ 
+ 
+ <attribute id="reference_id_entity" name="id_entity" color="green" width="2" type="markable_set" add_to_markableset_text="Mark as coreferent"  style="lcurve" remove_from_markableset_text="Unmark as coreferent" merge_into_markableset_text="Merge both sets">
+  <value id="value_reference_id_entity" name="id_entity"/>
+ </attribute>
+ 
+ 
+  <attribute id="reference_intro" name="intro" type="nominal_button">
+  <value id="reference_intro_na" name="na" />
+  <value id="reference_intro_intro" name="intro" next="reference_infstat_intro,reference_animacy,reference_specificity"/>
+  <value id="reference_intro_not-intro" name="not-intro" />
+ </attribute>
+ 
+  <attribute id="reference_infstat_intro" name="infstat_intro" type="nominal_button">
+  <value id="reference_infstat_na" name="na"/>
+  <value id="reference_infstat_sit" name="sit"/>
+  <value id="reference_infstat_ident" name="ident"/>
+  <value id="reference_infstat_new" name="new"/>
+ </attribute>
+ 
+ 
+<!-- Features of the discourse referent -->
+
+<!-- Animacy (Zaenen et al. 2004) -->
+ <attribute id="reference_animacy" name="animacy" type="nominal_button">
+  <value id="reference_animacy_na" name="na"/>
+  <value id="reference_animacy_human" name="human"/>
+  <value id="reference_animacy_organization" name="org" text="collective voice/purpose"/>  <!-- org = collective voice/purpose -->
+  <value id="reference_animacy_animal" name="animal" text=" non-human animates, incl. viruses and bacteria"/>  <!-- non-human animates, incl. viruses and bacteria -->
+  <value id="reference_animacy_place" name="place" text="potential locations for humans"/>  <!-- potential locations for humans -->
+  <value id="reference_animacy_time" name="time" text="time or duration"/>
+  <value id="reference_animacy_concrete" name="conc" text="tangible objects, incl. body parts"/>  <!-- tangible objects, incl. body parts -->
+  <value id="reference_animacy_nonconc" name="nonconc" text="default for inanimate but not concrete, incl. events"/>  <!-- default for inanimate but not concrete, incl. events -->
+  <value id="reference_animacy_vehicle" name="veh" />
+ </attribute>
+
+ <attribute id="reference_specificity" name="specificity" type="nominal_button">
+  <value id="reference_specificity_na" name="na"/>
+  <value id="reference_specificity_spec" name="spec"/>
+  <value id="reference_specificity_nonspec" name="nonspec" text="class/non-specific/hypothetical entity"/>
+ </attribute>
+ 
+ 
+<!-- Other -->
+ 
+ <attribute id="reference_comment" name="comment" type="freetext" text="Description of doubts, comments.">
+  <value id="value_comment_1" name="comment"/>
+ </attribute>
+ 
+</annotationscheme>

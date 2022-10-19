@@ -1,0 +1,6 @@
+﻿<?xml version="1.0"?>
+<customization>
+    <!--<rule pattern="test={empty}" style="background=red"/>-->
+    <rule pattern="{all}" style="handles=magenta"/>
+    <rule pattern="referential={pred,int,expl,idiom,neg,prop,unclear}" style="handles=gray"/>
+</customization>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotationscheme>
+
+ <attribute id="turn_n" name="n" type="freetext">
+  <value id="turn_n_1" name="turn_n_1"/>
+ </attribute>
+ 
+ <attribute id="turn_speaker" name="id_speaker" type="freetext">
+  <value id="turn_speaker_1" name="speaker"/>
+ </attribute>
+ 
+</annotationscheme>

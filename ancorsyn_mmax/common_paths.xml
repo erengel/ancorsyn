@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE common_paths>
+<common_paths>
+    <basedata_path>Basedata\</basedata_path>
+    <customization_path>Customizations\</customization_path>
+    <scheme_path>Schemes\</scheme_path>
+    <style_path>Styles\</style_path>
+    <markable_path>Markables\</markable_path>
+    <views>
+        <stylesheet>general.xsl</stylesheet>
+    </views>
+    <annotations>
+        <level name="reference" schemefile="reference_scheme.xml" customization_file="reference_customization.xml">Reference/$.xml</level>
+        <level name="edu" schemefile="edu_scheme.xml" customization_file="edu_customization.xml">Edu/$.xml</level>
+        <level name="disfluency" schemefile="disfluency_scheme.xml" customization_file="disfluency_customization.xml">Disfluency/$.xml</level>
+        <level name="turn" schemefile="turn_scheme.xml" customization_file="turn_customization.xml">Turn/$.xml</level>
+        <level name="section" schemefile="section_scheme.xml" customization_file="section_customization.xml">Section/$.xml</level>
+        </annotations>
+    <user_switches>
+        <user_switch name="coref_handle" default="on" description=""/>
+    </user_switches>
+</common_paths>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotationscheme>
+  
+ <attribute id="edu_n" name="n" type="freetext">
+  <value id="edu_n_1" name="edu_n_1" />
+ </attribute>
+ 
+ 
+</annotationscheme>
